@@ -14,20 +14,20 @@ A JSON structures as:
 
 ```ts
 {
-  id: string, // The bot's user ID
-  prefix: string, // The bot's prefix
-  owner: Array<string>, // An array of the bot's owners' IDs, can sometimes be more than one ID
-  library: string, // The library the bot uses
-  description: string, // The bot's short description
-  longDescription: string, // The bot's long description
-  certified: boolean, // Is the bot certified?
-  pageURL: string, // The bot's page on SBL
-  website?: string // A URL leading to the bot's website
-  support?: string // The code for the invite to the bot's support server
-  github?: string // The bot's GitHub repository
-  servers?: number, // The bot's server count, (sometimes doesn't exist)
-  users?: number, // The bot's user count, (sometimes doesn't exist)
-  votes: number // The amount of users that voted for the bot on the website, can be 0
+  id: string;                // The bot's user ID
+  prefix: string;            // The bot's prefix
+  owner: Array<string>;      // An array of the bot's owners' IDs, can sometimes be more than one ID
+  library: string;           // The library the bot uses
+  description: string;       // The bot's short description
+  longDescription: string;   // The bot's long description
+  certified: boolean;        // Whether the bot is certified or not
+  pageURL: string;           // The bot's page on SBL
+  website?: string;          // A URL leading to the bot's website
+  support?: string;          // The code for the invite to the bot's support server
+  github?: string;           // The bot's GitHub repository
+  servers?: number;          // The bot's server count, (sometimes doesn't exist)
+  users?: number;            // The bot's user count, (sometimes doesn't exist)
+  votes: number;             // The amount of users that voted for the bot on the website, can be 0
 }
 ```
 
@@ -63,8 +63,8 @@ Should be a JSON structured as:
 
 ```ts
 {
-  guilds: number, // Bot's server count (required, can be 0)
-  users?: number  // Bot's user count (optional, can't be 0)
+  guilds: number; // Bot's server count (required, can be 0)
+  users?: number; // Bot's user count (optional, can't be 0)
 }
 ```
 
@@ -74,8 +74,8 @@ A JSON structured as:
 
 ```ts
 {
-  servers: number, // The newly-posted server count
-  users?: number   // The newly-posted / already stored user count, if exists
+  servers: number; // The newly-posted server count
+  users?: number;  // The newly-posted / already stored user count, if exists
 }
 ```
 
